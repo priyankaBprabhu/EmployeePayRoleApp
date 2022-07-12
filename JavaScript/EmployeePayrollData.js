@@ -1,14 +1,6 @@
 class EmployeePayrollData {
-
-    constructor(...params) {
-        this.name = params[0];
-        this.profileImage = params[1];
-        this.gender = params[2];
-        this.department = params[3];
-        this.salary = params[4];
-        this.startDate = params[5];
-        this.notes = params[6];
-    }
+    id;
+   
 
     get name() {
         return this._name;
@@ -19,7 +11,7 @@ class EmployeePayrollData {
         if (nameRegex.test(name))
             this._name = name;
         else
-            throw "Name is Incorrect";;
+            throw "Name is Incorrect";
 
     }
 
